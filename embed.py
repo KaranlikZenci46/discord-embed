@@ -33,4 +33,3 @@ async def on_ready():
 bot.run(TOKEN)
 
 #made by https://github.com/KaranlikZenci46
-#discord.gg/vokkch
