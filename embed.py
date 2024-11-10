@@ -11,7 +11,7 @@ CHANNEL_ID = 1258067234236923955
 
 @bot.event
 async def on_ready():
-    print('SONUNDA AÇILDI AMK')
+    print('Bot is online')
 
     embed = discord.Embed(title="TITLE", description="Description", color=0x000000)
 
@@ -25,7 +25,7 @@ async def on_ready():
     channel = bot.get_channel(CHANNEL_ID)
     if channel:
         await channel.send(embed=embed, view=view)
-        print(f'Mesaj {channel.name} adlı kanala gönderildi')
+        print(f'Message sended {channel.name} named channel.')
     else:
         print("Channel is not exist")
         
